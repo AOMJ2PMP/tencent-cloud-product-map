@@ -2,16 +2,18 @@
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { id: "summary", label: "总体对比", group: null },
-  { id: "overlap", label: "两站重叠产品", group: null },
-  { id: "china-compute", label: "计算", group: "国内站独有" },
-  { id: "china-ai", label: "AI 大模型", group: "国内站独有" },
-  { id: "china-storage-db", label: "存储 & 数据库", group: "国内站独有" },
-  { id: "china-security-net", label: "安全 & 网络", group: "国内站独有" },
-  { id: "china-dev-iot", label: "研发效能 & IoT", group: "国内站独有" },
-  { id: "china-industry", label: "行业解决方案", group: "国内站独有" },
-  { id: "intl-only", label: "国际站独有产品", group: null },
-  { id: "conclusion", label: "结论与建议", group: null },
+  { id: "summary",          label: "总体对比",          group: "概览" },
+  { id: "overlap",          label: "两站重叠产品",       group: "概览" },
+  { id: "china-compute",    label: "计算",              group: "国内站独有" },
+  { id: "china-ai",         label: "AI 大模型",         group: "国内站独有" },
+  { id: "china-storage-db", label: "存储 & 数据库",     group: "国内站独有" },
+  { id: "china-security-net", label: "安全 & 网络",     group: "国内站独有" },
+  { id: "china-dev-iot",    label: "研发效能 & IoT",    group: "国内站独有" },
+  { id: "china-industry",   label: "行业解决方案",       group: "国内站独有" },
+  { id: "intl-only",        label: "国际站独有产品",     group: "国际站独有" },
+  { id: "purchase-intl",    label: "国际站购买方式",     group: "购买方式" },
+  { id: "purchase-cn",      label: "国内站购买方式",     group: "购买方式" },
+  { id: "conclusion",       label: "结论与建议",         group: "结论" },
 ];
 
 export function Sidebar() {
@@ -32,7 +34,7 @@ export function Sidebar() {
           setActive(top.target.id);
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.2 }
     );
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
@@ -64,7 +66,7 @@ export function Sidebar() {
       {/* Nav */}
       <nav className="flex-1 px-3 py-4 space-y-0.5">
         {navItems.map((item) => {
-          const showGroup = item.group !== lastGroup && item.group !== null;
+          const showGroup = item.group !== lastGroup;
           lastGroup = item.group;
 
           return (
@@ -91,7 +93,7 @@ export function Sidebar() {
 
       <div className="px-5 py-4 border-t border-gray-100">
         <p className="text-[10px] text-gray-300 leading-relaxed">
-          数据来源
+          158 个产品 · 数据来源
           <br />
           tencentcloud.com
           <br />

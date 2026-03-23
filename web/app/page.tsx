@@ -8,6 +8,8 @@ import { ChinaSecurityNetSection } from "@/components/sections/ChinaSecurityNetS
 import { ChinaDevIoTSection } from "@/components/sections/ChinaDevIoTSection";
 import { ChinaIndustrySection } from "@/components/sections/ChinaIndustrySection";
 import { IntlOnlySection } from "@/components/sections/IntlOnlySection";
+import { PurchaseIntlSection } from "@/components/sections/PurchaseIntlSection";
+import { PurchaseCnSection } from "@/components/sections/PurchaseCnSection";
 import { ConclusionSection } from "@/components/sections/ConclusionSection";
 
 export default function Home() {
@@ -24,6 +26,8 @@ export default function Home() {
         <ChinaDevIoTSection />
         <ChinaIndustrySection />
         <IntlOnlySection />
+        <PurchaseIntlSection />
+        <PurchaseCnSection />
         <ConclusionSection />
       </main>
     </div>
