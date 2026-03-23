@@ -756,8 +756,8 @@
     "purchase": {
       "intl": "hybrid",
       "intl_cta": "Get Started for Free / Contact Us",
-      "cn": "on_demand",
-      "cn_cta": "立即使用",
+      "cn": "hybrid",
+      "cn_cta": "免费试用 / 立即购买",
       "notes": "有免费试用额度；按分钟计费可直购；大规模商业授权需联系销售"
     },
     "competitors": {
@@ -1297,7 +1297,7 @@
     },
     "urls": {
       "intl": "https://www.tencentcloud.com/products/cbm",
-      "cn": "https://cloud.tencent.com/product/bm"
+      "cn": "https://cloud.tencent.com/product/cbm"
     },
     "purchase": {
       "intl": "on_demand",
@@ -1497,9 +1497,9 @@
     "purchase": {
       "intl": "contact_sales",
       "intl_cta": "Contact Sales",
-      "cn": "on_demand",
-      "cn_cta": "立即购买",
-      "notes": "国际站仅企业销售通道"
+      "cn": "contact_sales",
+      "cn_cta": "立即申请",
+      "notes": "国内站内测中，仅\"立即申请\"入口；国际站仅企业销售通道"
     },
     "competitors": {
       "aws": {
@@ -1575,9 +1575,9 @@
     "purchase": {
       "intl": "contact_sales",
       "intl_cta": "Documentation / View More",
-      "cn": "on_demand",
-      "cn_cta": "立即购买",
-      "notes": "国际站无购买或联系按钮，企业专属部署"
+      "cn": "contact_sales",
+      "cn_cta": "联系我们",
+      "notes": "国内/国际均无直购，专属部署需联系销售"
     },
     "competitors": {
       "aws": {
@@ -1692,9 +1692,9 @@
     "purchase": {
       "intl": "on_demand",
       "intl_cta": "Get Started / Install Now",
-      "cn": "on_demand",
-      "cn_cta": "立即使用",
-      "notes": "当前免费，Beta 阶段"
+      "cn": "contact_sales",
+      "cn_cta": "申请使用",
+      "notes": "需申请审核，非直购"
     },
     "competitors": {
       "aws": {
@@ -1765,7 +1765,7 @@
     },
     "urls": {
       "intl": "https://www.tencentcloud.com/products/trocket",
-      "cn": "https://cloud.tencent.com/product/tdmq-rocketmq"
+      "cn": "https://cloud.tencent.com/product/trocket"
     },
     "purchase": {
       "intl": "hybrid",
@@ -1804,7 +1804,7 @@
     },
     "urls": {
       "intl": "https://www.tencentcloud.com/products/trabbit",
-      "cn": "https://cloud.tencent.com/product/tdmq-rabbitmq"
+      "cn": "https://cloud.tencent.com/product/trabbit"
     },
     "purchase": {
       "intl": "hybrid",
@@ -1843,7 +1843,7 @@
     },
     "urls": {
       "intl": "https://www.tencentcloud.com/products/tpulsar",
-      "cn": "https://cloud.tencent.com/product/tdmq-pulsar"
+      "cn": "https://cloud.tencent.com/product/tpulsar"
     },
     "purchase": {
       "intl": "hybrid",
@@ -1882,7 +1882,7 @@
     },
     "urls": {
       "intl": "https://www.tencentcloud.com/products/tcmq",
-      "cn": "https://cloud.tencent.com/product/tdmq-cmq"
+      "cn": "https://cloud.tencent.com/product/tcmq"
     },
     "purchase": {
       "intl": "hybrid",
@@ -4100,7 +4100,7 @@
     "name_en": "T-Sec WeTest Game Quality Monitoring",
     "category": "安全",
     "availability": {
-      "intl": true,
+      "intl": false,
       "cn": true
     },
     "urls": {
@@ -4108,11 +4108,9 @@
       "cn": "https://cloud.tencent.com/product/gqm"
     },
     "purchase": {
-      "intl": "contact_sales",
-      "intl_cta": "Contact Us",
       "cn": "on_demand",
       "cn_cta": "立即购买",
-      "notes": "国际站页面显示产品暂不运营"
+      "notes": "国际站页面存在但产品已停运；国内站可购买"
     },
     "competitors": {
       "aws": {
