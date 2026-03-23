@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import { Geist } from "next/font/google";
+import "./globals.css";
+
+const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "腾讯云产品差异分析 · 国际站 vs 国内站",
+  description: "腾讯云国际站与国内站产品上架差异全景对比，为 Tencent Cloud Evangelist 候选人提供参考。",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="zh-CN" className={`${geist.variable} h-full`}>
+      <body className="h-full antialiased">{children}</body>
+    </html>
+  );
+}
